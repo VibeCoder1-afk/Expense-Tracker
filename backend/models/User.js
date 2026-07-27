@@ -11,7 +11,15 @@ const userSchema = new mongoose.Schema(
     },
     password: {
       type: String,
-      required: true,
+      // Not required for accounts created via Google Sign-In.
+      required: function () {
+        return !this.googleId;
+      },
+    },
+    googleId: {
+      type: String,
+      unique: true,
+      sparse: true, // allows many docs with no googleId at all
     },
     name: {
       type: String,

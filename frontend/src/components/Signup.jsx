@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { register } from "../api";
 import AuthLayout from "./AuthLayout";
 import PasswordInput from "./PasswordInput";
+import GoogleSignInButton from "./GoogleSignInButton";
 
 const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -101,6 +102,10 @@ export default function Signup({ onAuthed, onSwitchToLogin }) {
             )}
           </button>
         </form>
+
+        <div className="auth-divider"><span>or</span></div>
+        <GoogleSignInButton onAuthed={onAuthed} onError={setError} />
+
         <div className="auth-switch">
           Already have an account?{" "}
           <button type="button" className="link-btn" onClick={onSwitchToLogin}>
