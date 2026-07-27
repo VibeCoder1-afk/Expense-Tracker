@@ -2,6 +2,21 @@
 
 A full-stack MERN application for logging, categorizing, and visualizing personal income and expenses.
 
+## Screenshots
+
+### Login
+![Login](login.png)
+
+### Dashboard — Dark Mode
+![Dashboard Dark](dashboard-dark.png)
+
+### Dashboard — Light Mode
+![Dashboard Light](dashboard-light.png)
+
+### Analytics
+![Analytics](analytics-1.png)
+![Analytics — Weekday Heatmap & Insights](analytics-2.png)
+
 ## Tech Stack
 
 - **Frontend:** React (Create React App), Recharts, Axios
@@ -14,8 +29,8 @@ A full-stack MERN application for logging, categorizing, and visualizing persona
 - Add income/expense transactions with category, amount, note, and date
 - View total income, total expense, and running balance, with month-over-month trend indicators
 - Donut chart breakdown of spending by category (Recharts), with category icons
-- Monthly analytics page with balance trend (line chart) and income vs. expense comparison (bar chart)
-- Weekday spending heatmap
+- Monthly analytics page: balance trend (line chart), income vs. expense by month (bar chart), weekday spending heatmap, and top-category/average-spend stats
+- Automated spending insights and warnings (e.g. flags your top spending category and largest single expense)
 - Budget goal tracking with progress indicator
 - Search, sort, and filter transactions (by type, this month, last month, or free-text search)
 - Export transactions to CSV
