@@ -138,6 +138,7 @@ npm start                # starts on http://localhost:3000
 ## Author
 
 **Tanish Jaiswal**
+
 Netaji Subhas University of Technology (NSUT)
 
 ## License
