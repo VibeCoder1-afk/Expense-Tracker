@@ -116,8 +116,9 @@ npm start                # starts on http://localhost:3000
 
 | Method | Endpoint                     | Description                                             |
 |--------|-------------------------------|----------------------------------------------------------|
-| POST   | /api/auth/signup              | Create a new user account                                 |
+| POST   | /api/auth/register             | Create a new user account                                 |
 | POST   | /api/auth/login                | Log in and receive an auth token                           |
+| GET    | /api/auth/me                    | Get the current logged-in user                             |
 | GET    | /api/transactions             | List transactions (filter by month/year/category)         |
 | GET    | /api/transactions/summary     | Totals + category breakdown + month-over-month trends     |
 | GET    | /api/transactions/trends      | Monthly income/expense/balance trends (for Analytics page) |
@@ -127,11 +128,18 @@ npm start                # starts on http://localhost:3000
 | GET    | /api/budget                   | Get current monthly budget goal                             |
 | PUT    | /api/budget                   | Set the monthly budget goal                                  |
 
-> Note: the exact auth endpoint paths above are a standard-convention guess (`/api/auth/signup`, `/api/auth/login`) — double check these against your actual `routes/auth.js` and adjust if they differ.
-
 ## Possible Extensions
 
 - Recurring transactions
 - Multi-currency support
 - Export to PDF
 - Shared/multi-user household budgets
+
+## Author
+
+**Tanish Jaiswal**
+Netaji Subhas University of Technology (NSUT)
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
