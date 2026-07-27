@@ -87,6 +87,9 @@ export default function Signup({ onAuthed, onSwitchToLogin }) {
               placeholder="At least 8 characters"
               showChecklist
             />
+            {touched && !passwordValid && (
+              <div className="field-hint error">Password must be at least 8 characters.</div>
+            )}
           </div>
           <button className="primary" type="submit" disabled={loading}>
             {loading ? (
